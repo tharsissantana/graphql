@@ -8,7 +8,7 @@ Demo project for Spring Boot with GraphQL
 
 - Find All Books
 
-```
+```graphql
 query {
  findAllBooks {
    id
@@ -17,7 +17,7 @@ query {
 }
 ```
 
-```
+```graphql
 query {
   findAllBooks {
     id
@@ -36,7 +36,7 @@ query {
 
 -  Create a new book
 
-```
+```graphql
 mutation {
   newBook(
     title: "Java: The Complete Reference, Tenth Edition",
@@ -49,7 +49,7 @@ mutation {
 
 - Update the page count of a book
 
-```
+```graphql
 mutation {
   updateBookPageCount(pageCount: 1344, id: 2) {
     id pageCount
@@ -59,7 +59,7 @@ mutation {
 
 - Delete a book
 
-```
+```graphql
 mutation {
   deleteBook(id:2)
 }
